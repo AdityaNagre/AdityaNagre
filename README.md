@@ -1,5 +1,5 @@
-Hi, I'm Aditya 👋
-MERN Stack Developer
+<h2> Hi, I'm Aditya 👋</h2> <br/>
+<h2>MERN Stack Developer</h2>
 
 - 🔭 I’m currently working as a frontend developer to revamp the Dr. B R Ambedkar National Institute Of Technology, Jalandhar's official website. [https://www.nitj.ac.in/](https://www.nitj.ac.in/)
 
