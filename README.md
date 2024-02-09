@@ -1,11 +1,4 @@
 <h1> Hi, I'm Aditya 👋</h1>
-<h2>MERN Stack Developer</h2>
-
-- 🔭 I’m currently working as a frontend developer to revamp the Dr. B R Ambedkar National Institute Of Technology, Jalandhar's official website. [https://www.nitj.ac.in/](https://www.nitj.ac.in/)
-
-- 🌱 I’m currently learning **DS Algo, Web3 Development.**
-
-- 💬 Ask me about **React, Node JS, Express JS, API's, MongoDB**
 
 - 📫 How to reach me **adxtyacp@gmail.com**
 
