@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="windowBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E1E1E" />
+      <stop offset="100%" stop-color="#121212" />
+    </linearGradient>
+
+    <!-- Sidebar Gradient -->
+    <linearGradient id="sidebarBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#282828" />
+      <stop offset="100%" stop-color="#222222" />
+    </linearGradient>
+
+    <!-- Chip Gradient -->
+    <linearGradient id="chipGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF3B30" />
+      <stop offset="50%" stop-color="#AF52DE" />
+      <stop offset="100%" stop-color="#007AFF" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .window-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 11px;
+      fill: #8E8E93;
+      font-weight: 500;
+    }
+    .spec-label {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 11px;
+      fill: #AEAEB2;
+      font-weight: 500;
+    }
+    .spec-value {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 11px;
+      fill: #FFFFFF;
+      font-weight: 400;
+    }
+    .mac-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 20px;
+      fill: #FFFFFF;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    .mac-subtitle {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 10px;
+      fill: #8E8E93;
+      font-weight: 400;
+    }
+    .btn {
+      cursor: pointer;
+    }
+  </style>
+
+  <!-- Window Container with shadow -->
+  <rect x="0" y="0" width="420" height="300" rx="12" fill="url(#windowBg)" stroke="#2C2C2E" stroke-width="1" />
+
+  <!-- Window Header / Title Bar -->
+  <g transform="translate(0, 0)">
+    <!-- Traffic lights -->
+    <circle cx="20" cy="18" r="5.5" fill="#FF5F56" />
+    <circle cx="36" cy="18" r="5.5" fill="#FFBD2E" />
+    <circle cx="52" cy="18" r="5.5" fill="#27C93F" />
+    <text x="210" y="22" text-anchor="middle" class="window-title">About This Developer</text>
+  </g>
+
+  <!-- Sidebar (Left) -->
+  <rect x="1" y="35" width="130" height="264" fill="url(#sidebarBg)" opacity="0.3" rx="0" />
+  <line x1="131" y1="35" x2="131" y2="299" stroke="#2C2C2E" stroke-width="1" />
+
+  <!-- Mac Hardware Representation (Minimalist Graphic) -->
+  <g transform="translate(25, 80)">
+    <!-- Laptop screen border -->
+    <rect x="5" y="5" width="70" height="46" rx="4" fill="#3A3A3C" stroke="#48484A" stroke-width="1.5" />
+    <!-- Screen content inner -->
+    <rect x="8" y="8" width="64" height="40" rx="2" fill="#000000" />
+    <!-- Neon wallpaper glow on screen -->
+    <circle cx="40" cy="28" r="18" fill="url(#chipGrad)" opacity="0.6" filter="blur(4px)" />
+    <!-- Stand / Keyboard body -->
+    <path d="M2,52 L78,52 L70,60 L10,60 Z" fill="#636366" />
+    <!-- Display connection notch -->
+    <rect x="35" y="51" width="10" height="2" fill="#2C2C2E" />
+  </g>
+
+  <!-- Spec Info (Right) -->
+  <g transform="translate(155, 60)">
+    <!-- Main Title -->
+    <text x="0" y="20" class="mac-title">MacBook Pro</text>
+    <text x="0" y="34" class="mac-subtitle">16-inch, Nov 2023</text>
+
+    <!-- Specs List -->
+    <g transform="translate(0, 60)">
+      <!-- Processor / Chip -->
+      <text x="0" y="0" class="spec-label">Chip</text>
+      <text x="90" y="0" class="spec-value">Aditya Max (Full Stack)</text>
+
+      <!-- Memory -->
+      <text x="0" y="22" class="spec-label">Memory</text>
+      <text x="90" y="22" class="spec-value">Infinite Curiosity</text>
+
+      <!-- Startup Disk -->
+      <text x="0" y="44" class="spec-label">Startup Disk</text>
+      <text x="90" y="44" class="spec-value">Macintosh HD (React/Node)</text>
+
+      <!-- Graphics -->
+      <text x="0" y="66" class="spec-label">Graphics</text>
+      <text x="90" y="66" class="spec-value">Vanilla CSS &amp; Tailwind</text>
+
+      <!-- Serial Number -->
+      <text x="0" y="88" class="spec-label">Serial Number</text>
+      <text x="90" y="88" class="spec-value">ADITYANAGRE2026</text>
+
+      <!-- macOS version -->
+      <text x="0" y="110" class="spec-label">System OS</text>
+      <text x="90" y="110" class="spec-value">macOS Sequoia (v15.0)</text>
+    </g>
+
+    <!-- System Report Button -->
+    <g transform="translate(0, 195)" class="btn">
+      <rect x="0" y="0" width="100" height="20" rx="4" fill="#3A3A3C" stroke="#48484A" />
+      <text x="50" y="13" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" fill="#FFFFFF">System Report...</text>
+    </g>
+  </g>
+</svg>
