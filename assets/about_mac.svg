@@ -79,8 +79,11 @@
     <rect x="5" y="5" width="70" height="46" rx="4" fill="#3A3A3C" stroke="#48484A" stroke-width="1.5" />
     <!-- Screen content inner -->
     <rect x="8" y="8" width="64" height="40" rx="2" fill="#000000" />
-    <!-- Neon wallpaper glow on screen -->
-    <circle cx="40" cy="28" r="18" fill="url(#chipGrad)" opacity="0.6" filter="blur(4px)" />
+    <!-- Neon wallpaper glow on screen (slowly drifting, alive) -->
+    <circle cx="40" cy="28" r="18" fill="url(#chipGrad)" opacity="0.6" filter="blur(4px)">
+      <animate attributeName="r" values="16;20;16" dur="3.5s" repeatCount="indefinite" />
+      <animateTransform attributeName="transform" type="rotate" values="0 40 28;360 40 28" dur="12s" repeatCount="indefinite" />
+    </circle>
     <!-- Stand / Keyboard body -->
     <path d="M2,52 L78,52 L70,60 L10,60 Z" fill="#636366" />
     <!-- Display connection notch -->
@@ -114,6 +117,9 @@
       <!-- Serial Number -->
       <text x="0" y="88" class="spec-label">Serial Number</text>
       <text x="90" y="88" class="spec-value">ADITYANAGRE2026</text>
+      <rect x="200" y="79" width="6" height="11" fill="#2997FF">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" dur="1s" repeatCount="indefinite" />
+      </rect>
 
       <!-- macOS version -->
       <text x="0" y="110" class="spec-label">System OS</text>
