@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="boardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#241F17" />
+      <stop offset="100%" stop-color="#171310" />
+    </linearGradient>
+    <linearGradient id="goldFill" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F3E3B3" />
+      <stop offset="100%" stop-color="#D4AF37" />
+    </linearGradient>
+    <linearGradient id="maroonChip" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9C2A4E" />
+      <stop offset="100%" stop-color="#5C1A2E" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .head    { font-family: "Cinzel", Georgia, serif; font-size: 14px; font-weight: 700; fill: #D4AF37; letter-spacing: 2px; }
+    .w-bg    { fill: #2B241A; stroke: #4A3B22; stroke-width: 1px; }
+    .w-title { font-family: "Cormorant Garamond", Georgia, serif; font-size: 13px; fill: #EDE4D3; font-weight: 700; }
+    .w-sub   { font-family: "Cormorant Garamond", Georgia, serif; font-style: italic; font-size: 10px; fill: #9C8A63; }
+    .w-label { font-family: "Cinzel", Georgia, serif; font-size: 9px; fill: #9C8A63; letter-spacing: 1.5px; }
+  </style>
+
+  <rect x="0" y="0" width="360" height="320" rx="8" fill="url(#boardBg)" stroke="#8C6A3F" stroke-width="1.5" />
+
+  <!-- Header -->
+  <text x="20" y="30" class="head">FORUM STATUS</text>
+  <circle cx="336" cy="26" r="3.5" fill="#D4AF37">
+    <animate attributeName="opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite" />
+  </circle>
+  <line x1="20" y1="42" x2="340" y2="42" stroke="#4A3B22" stroke-width="1" />
+
+  <!-- Torch (React) -->
+  <g transform="translate(20, 55)">
+    <rect x="0" y="0" width="150" height="115" rx="10" class="w-bg" />
+    <g transform="translate(15, 15)">
+      <circle cx="16" cy="16" r="16" fill="none" stroke="#D4AF37" stroke-width="1.3" opacity="0.55">
+        <animate attributeName="r" values="16;22;16" dur="2.4s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.55;0;0.55" dur="2.4s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="16" cy="16" r="16" fill="url(#maroonChip)" />
+      <path d="M16,7 C 20,12 20,17 16,22 C 12,17 12,12 16,7 Z" fill="#F3C25A">
+        <animate attributeName="d" dur="0.8s" repeatCount="indefinite"
+          values="M16,7 C 20,12 20,17 16,22 C 12,17 12,12 16,7 Z; M16,5 C 21,11 21,18 16,23 C 11,18 11,11 16,5 Z; M16,7 C 20,12 20,17 16,22 C 12,17 12,12 16,7 Z" />
+      </path>
+      <text x="40" y="14" class="w-title">Ignis</text>
+      <text x="40" y="27" class="w-sub">React — burning bright</text>
+    </g>
+    <g transform="translate(15, 65)">
+      <circle cx="16" cy="16" r="16" fill="url(#maroonChip)" />
+      <path d="M9,8 L21,8 L21,24 L9,24 M9,8 L15,16 L9,24 M15,16 L21,24 M21,8 L15,16" stroke="#F3E3B3" stroke-width="1.3" fill="none" stroke-linejoin="round" />
+      <text x="40" y="14" class="w-title">Codex</text>
+      <text x="40" y="27" class="w-sub">Node.js — inscribed</text>
+    </g>
+  </g>
+
+  <!-- Focus / Shield -->
+  <g transform="translate(190, 55)">
+    <rect x="0" y="0" width="150" height="50" rx="10" class="w-bg" />
+    <g transform="translate(12, 10)">
+      <path d="M15,0 L28,6 L28,17 C28,26 22,31 15,34 C8,31 2,26 2,17 L2,6 Z" fill="url(#maroonChip)" />
+      <path d="M15,6 L15,27" stroke="#D4AF37" stroke-width="1" opacity="0.7" />
+      <text x="40" y="14" class="w-title">Vigilance</text>
+      <text x="40" y="27" class="w-sub">Deep Focus — Do Not Disturb</text>
+    </g>
+  </g>
+
+  <!-- Amphora / Tailwind -->
+  <g transform="translate(190, 120)">
+    <rect x="0" y="0" width="150" height="50" rx="10" class="w-bg" />
+    <g transform="translate(12, 8)">
+      <path d="M9,0 L23,0 L23,6 L30,10 L30,28 Q30,36 16,36 Q2,36 2,28 L2,10 L9,6 Z" fill="none" stroke="#D4AF37" stroke-width="1.3" />
+      <text x="40" y="16" class="w-title">Amphora</text>
+      <text x="40" y="29" class="w-sub">Tailwind — vessel of style</text>
+    </g>
+  </g>
+
+  <!-- Aqueduct fill bars -->
+  <g transform="translate(20, 195)">
+    <rect x="0" y="0" width="320" height="105" rx="10" class="w-bg" />
+
+    <g transform="translate(15, 15)">
+      <text x="0" y="0" class="w-label">ARS FRONTALIS</text>
+      <rect x="0" y="10" width="290" height="10" rx="5" fill="#1B1712" stroke="#4A3B22" stroke-width="0.5" />
+      <rect x="0" y="10" width="0" height="10" rx="5" fill="url(#goldFill)">
+        <animate attributeName="width" values="0;255;255" keyTimes="0;0.6;1" dur="2.4s" fill="freeze" begin="0.2s" />
+      </rect>
+    </g>
+
+    <g transform="translate(15, 55)">
+      <text x="0" y="0" class="w-label">VIS INTERNA</text>
+      <rect x="0" y="10" width="290" height="10" rx="5" fill="#1B1712" stroke="#4A3B22" stroke-width="0.5" />
+      <rect x="0" y="10" width="0" height="10" rx="5" fill="url(#goldFill)">
+        <animate attributeName="width" values="0;272;272" keyTimes="0;0.6;1" dur="2.4s" fill="freeze" begin="0.4s" />
+      </rect>
+    </g>
+  </g>
+</svg>
